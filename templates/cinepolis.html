@@ -63,7 +63,6 @@
         })
           .then((data) => data.json())
           .then((e) => {
-            console.log(e);
             notificacion.style.display = "block";
             if (e.limite) {
               nTitulo.textContent = 'Error';
@@ -71,7 +70,7 @@
               total.value = `$0 MXN`;
             } else {
               nTitulo.textContent = ':)';
-              nTexto.textContent = 'Gracias por tu compra.';
+              nTexto.textContent = `Gracias por tu compra ${e.nombre}`;
               total.value = `$${e.total} MXN`;
             }
 

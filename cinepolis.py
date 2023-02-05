@@ -34,6 +34,7 @@ def calcular():
 
   return {
     'limite': excedeLimite,
+    'nombre': nombre,
     'total': total
     }
 
