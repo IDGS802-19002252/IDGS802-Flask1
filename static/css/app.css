@@ -69,6 +69,7 @@ label {
   align-items: center;
   height: 1.5rem;
   text-align: left;
+  width: 100%;
 }
 
 button {
